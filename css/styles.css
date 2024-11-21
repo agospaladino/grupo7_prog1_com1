@@ -56,3 +56,27 @@ footer p {
     flex-direction: column;
     align-items: center;
 }
+#home article {
+    width: 28%;
+    background-color:  rgb(201, 197, 197);
+
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+#home section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#home article img {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#home article div {
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
