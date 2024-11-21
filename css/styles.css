@@ -37,3 +37,22 @@ header a {
     text-decoration: none;
     color: black;
 }
+
+footer {
+    display: flex;
+    justify-content: space-around;
+
+    padding: 20px;
+    background-color:  rgb(201, 197, 197);
+    color: black;
+}
+
+footer p {
+    color: black;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
