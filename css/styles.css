@@ -80,3 +80,19 @@ footer p {
     padding-left: 20px;
     padding-bottom: 20px;
 }
+
+/* css detalle */
+
+#detalle-receta {
+    display: flex;
+    justify-content: space-around;
+}
+
+#detalle-receta img, #detalle-receta div {
+    width: 40%;
+}
+
+#detalle-receta div {
+    display: flex;
+    flex-direction: column;
+}
