@@ -14,7 +14,7 @@ fetch("https://dummyjson.com/recipes")
                     <div id="recipes">
                         <h3>${data.recipes[i].name}</h3>
                         <p>${data.recipes[i].difficulty}</p>
-                        <a href="detalle-receta.html?id=${data.recipes[i]._id}">ir a receta</a>
+                        <a href="detalle.html?id=${data.recipes[i].id}">ir a receta</a>
                     </div>
                 </article>
             `;
@@ -47,7 +47,7 @@ boton.addeventlistenner('click', function(){
                 <div>
                     <h3>${data.recipes[i].name}</h3>
                     <p>${data.recipes[i].difficulty}</p>
-                    <a href="detalle-receta.html?id=${data.recipes[i].id}">Ir a detalle</a>
+                    <a href="detalle.html?id=${data.recipes[i].id}">Ir a detalle</a>
                 </div>
                 
             </article>
