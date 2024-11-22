@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
 }
-
 body {
     margin: 0;
     font-family: "Quicksand", sans-serif;
@@ -12,6 +11,13 @@ body {
     font-weight: 400;
     font-style: normal;
     background-color: rgb(235, 225, 225);
+}
+ul, ol{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: black;
 }
 /*Header*/
 .header-main-container {
@@ -31,7 +37,6 @@ header .login-reg{
 }
 header .login-reg li{
     text-decoration: none;
-    list-style-type: none;
     margin: 0px 10px;
 }
 header .logo{
@@ -39,9 +44,9 @@ header .logo{
     justify-content: center;
 }
 header img {
-    width: 200px;
+    width: 180px;
     border-radius: 100%;
-    margin: 20px 0px 30px 0px;
+    margin-bottom: 20px;
 }
 header .menu-principal {
     list-style-type: none;
@@ -59,12 +64,17 @@ header .menu-principal li {
 header a {
     text-decoration: none;
     color: black;
+    width: 15%;
 }
-
+/*Body*/
 #home {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.titulo-principal{
+    display: flex;
+    justify-content: center;
 }
 #home article {
     width: 28%;
