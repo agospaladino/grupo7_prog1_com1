@@ -20,6 +20,10 @@ fetch("https://dummyjson.com/recipes")
             `;
         }
     })
+    .catch(function(err){
+        console.log(err);
+        
+    })
 
 let button = document.querySelector("#home button");
 let pagina = 0;
@@ -54,5 +58,7 @@ boton.addeventlistenner('click', function(){
             boton.disabled = true
         }
     })
-}
-)
+    })
+    .catch(function(err){
+    console.log(err);
+    })

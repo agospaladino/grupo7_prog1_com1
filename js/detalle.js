@@ -30,3 +30,7 @@ fetch(`https://dummyjson.com/recipes/${id}`)
         }
         URL.innerHTML = categorias
     })
+    .catch(function(err){
+        console.log(err);
+        
+    })
