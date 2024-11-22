@@ -100,9 +100,9 @@ footer p {
     justify-content: center;
     align-items: center;
 }
-#home article img {
+article img {
     width: 80%;
-    border-radius: 20px;
+    border-radius: 15%;
     padding: 20px;
     display: flex;
     align-items: center;
