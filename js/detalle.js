@@ -23,5 +23,10 @@ fetch(`https://dummyjson.com/recipes/${id}`)
         for(let i= 0; i< data.instructions.length; i++){
             ol.innerHTML += `<li>${data.instructions}</li>`
         }
-    
+        let categorias = ''
+        for (let i = 0; i < data.tags.length; i++) {
+            categorias += `<li>${data.tags[i]}</li>`
+            
+        }
+        URL.innerHTML = categorias
     })
