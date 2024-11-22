@@ -11,6 +11,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    background-color: rgb(235, 225, 225);
 }
 /*Header*/
 .header-main-container {
@@ -18,7 +19,6 @@ body {
     width: 100%;
 }
 .header-sub-container{
-    background-color: rgb(207, 203, 203);
     width: 100%;
 }
 header .buscador-log-register{
@@ -61,18 +61,6 @@ header a {
     color: black;
 }
 
-footer {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-    background-color:  rgb(201, 197, 197);
-    color: black;
-}
-
-footer p {
-    color: black;
-}
-
 #home {
     display: flex;
     flex-direction: column;
@@ -80,8 +68,7 @@ footer p {
 }
 #home article {
     width: 28%;
-    background-color:  rgb(201, 197, 197);
-
+    background-color: rgb(248, 216, 221);
     margin-bottom: 20px;
     border-radius: 20px;
 }
@@ -115,6 +102,25 @@ article img {
     padding-left: 20px;
     padding-bottom: 20px;
 }
+
+/*Footer*/
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgb(248, 216, 221);
+    color: black;
+}
+footer p {
+    color: black;
+}
+.footer-main{
+    width: 100%;
+}
+.footer-main p{
+    padding: 10px;
+}
+
 
 /* css detalle */
 
