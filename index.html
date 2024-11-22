@@ -7,21 +7,31 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body id="home">
-    <header>
-        <div class="container">
+    <header class="header-main-container">
+        <div class="header-sub-container">
+        <div class="buscador-log-register">
             <form action="search-result.html" method="get">
                 <input type="text" name="busqueda" placeholder="Buscar una receta">
                 <button type="submit">Buscar</button>
             </form>
+            <nav class="navlogin">
+                <ul class="login-reg">
+                    <li class="login"><a href="">Login</a></li>
+                    <li class="register"><a href="">Register</a></li>
+                </ul>
+            </nav>
         </div>
-        <img src="./img/logo_ratatouille.jpg" alt="">
+        <div class="logo">
+            <img src="./img/logo_ratatouille.jpg" alt="logo">
+        </div>
+        </div>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="detalle.html">Detalle</a></li>
-                <li><a href="categorias.html">Categorias</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="register.html">Registro</a></li>
+            <ul class="menu-principal">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="detalle.html">DETALLE</a></li>
+                <li><a href="categorias.html">CATEGORIAS</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+                <li><a href="register.html">REGISTRO</a></li>
             </ul>
         </nav>
     </header>

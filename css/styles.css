@@ -9,36 +9,49 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
-
-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    background-color: rgb(201, 197, 197);
-    border-radius: ;
+/*Header*/
+.header-main-container {
     color: black;
-    padding: 10px 20px;
-    height: 200px;
-
+    width: 100%;
 }
-
-header img {
-    width: 200px;
-    border-radius: 20px;
+.header-sub-container{
+    background-color: rgb(207, 203, 203);
+    width: 100%;
 }
-
-header ul {
-    list-style-type: none;
+header .buscador-log-register{
     display: flex;
     justify-content: flex-end;
+    padding: 20px;
 }
-
-header li {
-    margin-left: 20px;
+header .login-reg{
+    display: flex;
 }
-
+header .login-reg li{
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0px 10px;
+}
+header .logo{
+    display: flex;
+    justify-content: center;
+}
+header img {
+    width: 200px;
+    border-radius: 100%;
+    margin: 20px 0px 30px 0px;
+}
+header .menu-principal {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+header .menu-principal li {
+    padding: 20px;
+    background-color: rgb(248, 216, 221);
+    margin: 20px 10px;
+    width: 15%;
+    text-align: center;
+}
 header a {
     text-decoration: none;
     color: black;
