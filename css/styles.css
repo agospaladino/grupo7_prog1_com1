@@ -51,6 +51,7 @@ header .menu-principal li {
     margin: 20px 10px;
     width: 15%;
     text-align: center;
+    border-radius: 5px;
 }
 header a {
     text-decoration: none;
@@ -60,7 +61,6 @@ header a {
 footer {
     display: flex;
     justify-content: space-around;
-
     padding: 20px;
     background-color:  rgb(201, 197, 197);
     color: black;
@@ -87,12 +87,25 @@ footer p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    border-radius: 10px;
 }
-
+#article-recipes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#home #recipes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 #home article img {
-    width: 100%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    width: 80%;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
 }
 
 #home article div {
