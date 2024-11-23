@@ -61,9 +61,9 @@ document.addEventListener("DOMContentLoaded", function () {
                     containerRecetas.innerHTML = `<p>No se encontraron recetas para mostrar.</p>`;
                 }
             })
-        .catch((error){
-            console.error(`Error al cargar las recetas: ${error}`);
-        });
+        .catch(function(error) {
+                console.log("Error al cargar las recetas " + error);
+        })
     }
     // Asignar el evento al botón de cargar más
     botonCargarMas.addEventListener("click", cargarRecetas);
