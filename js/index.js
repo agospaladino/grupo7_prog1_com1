@@ -1,4 +1,7 @@
 let section = document.querySelector("#home section");
+let button = document.querySelector("home button");
+let pagina = 0;
+
 
 fetch("https://dummyjson.com/recipes")
     .then(function(res) {
@@ -7,7 +10,7 @@ fetch("https://dummyjson.com/recipes")
     .then(function(data) {
         console.log(data);
 
-        for (let i = 0; i < data.recipes.length; i++) {
+        for (let i = 0; i < 10; i++) {
             section.innerHTML += `
                 <article id="article-recipes">
                     <img src="${data.recipes[i].image}" alt="">
@@ -25,14 +28,13 @@ fetch("https://dummyjson.com/recipes")
         
     })
 
-let button = document.querySelector("#home button");
-let pagina = 0;
 
-boton.addeventlistenner('click', function(){
+boton.addEventListenner('click', function(){
     console.log('tocaste el boton')
     pagina += 10;
     
-    fetch(`https://dummyjson.com/recipes?limit=10&skip=10&select=name,image=${pagina}`)
+    
+    fetch(`https://dummyjson.com/recipes?limit=&skip=&select=name,image=${pagina}`)
     .then(function (res) {
         return res.json()
     })
