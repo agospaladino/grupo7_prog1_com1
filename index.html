@@ -9,41 +9,60 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body id="home">
+<body class="body-index">
+
     <header class="header-main-container">
-        <div class="header-sub-container">
-        <div class="buscador-log-register">
-            <form action="search-result.html" method="get">
-                <input type="text" name="busqueda" placeholder="Buscar una receta">
+
+        <article class="article-login-reg">
+            <nav>
+                <ul class="login-reg">
+                    <li><a href="./login.html">Login</a></li>
+                    <li><a href="./register.html">Register</a></li>
+                </ul>
+            </nav>
+        </article>
+
+        <article class="buscador-receta-index">
+            <form action="search-results.html" method="get" id="form-busqueda">
+                <input type="text" name="busqueda" id="input-busqueda" placeholder="Buscar una receta">
+                <div class="invalid-busqueda"></div>
                 <button type="submit">Buscar</button>
-            </form>     
-            
-        </div>
-        <div class="logo">
+            </form> 
+        </article>    
+
+        <article class="logo-header">
             <img src="./img/logo_ratatouille.jpg" alt="logo">
-        </div>
-        </div>
-        <nav>
-            <ul class="menu-principal">
-                <li><a href="./index.html">HOME</a></li>
-                <li><a href="./detalle.html">DETALLE</a></li>
-                <li><a href="./categories.html">CATEGORIAS</a></li>
-                
-            </ul>
-        </nav>
+        </article>
+
+        <article>
+            <nav class="header-menu-nav">
+                <ul class="menu-principal">
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./detalle.html">DETALLE</a></li>
+                    <li><a href="./categories.html">CATEGORIAS</a></li>
+                </ul>
+            </nav>
+        </article>
+
     </header>
+
     <main class="main-container-index">
-        <h1 class="titulo-principal">RECETAS</h1>
-        <section>
-            
+        <h1 class="titulo-index">RECETAS</h1>
+        <section class="container-recetas-index">
         </section>
-        <button>Cargar mas</button>
+        <div class="caja-boton-cargar-index">
+            <button class="boton-cargar-index">Cargar mas</button>
+        </div>
     </main>
-    <footer class="footer-main">
-        <p>Amalia Gomez Di Santo |</p>
-        <p>Agostina Paladino |</p>
-        <p>Juana Diaz Autorde</p>
+
+    <footer class="footer-main-container">
+        <section class="nombres-footer">
+            <p>Juana Diaz Autorde |</p>
+            <p>Amalia Gomez Di Santo |</p>
+            <p>Agostina Paladino</p>
+        </section>
     </footer>
+
     <script src="./js/index.js"></script>
 </body>
 </html>
