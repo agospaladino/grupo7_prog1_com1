@@ -151,3 +151,49 @@ footer p {
     display: flex;
     flex-direction: column;
 }
+/* css login */
+.form-container{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+.form-container h1{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 3%;
+}
+.form-container h3{
+    text-align:right;
+    text-transform: uppercase;
+    margin-bottom: 3%;
+}
+
+.access-form{
+    background-color: rgba(204, 204, 204, 0.5);
+    padding: 8%;
+    border-radius: 10px;
+}
+.access-form label{
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-flex;
+}
+
+.access-form button{
+    font-size:16px;
+    background-color: rgb(169, 166, 166);
+    border: 1px solid rgb(169,166,166);
+    color:white;
+    text-transform: capitalize;
+    width: 40%;
+    padding: 8px 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.botones{
+    display: flex;
+    justify-content: space-around;
+}
