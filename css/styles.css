@@ -151,7 +151,7 @@ footer p {
     display: flex;
     flex-direction: column;
 }
-/* css login */
+/* css formularios */
 .form-container{
     display:flex;
     flex-direction:column;
@@ -196,4 +196,10 @@ footer p {
 .botones{
     display: flex;
     justify-content: space-around;
+}
+.remember-me{
+    text-align: center;
+}
+.remember-me input{
+    width:auto;
 }
