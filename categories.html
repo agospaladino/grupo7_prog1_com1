@@ -10,6 +10,32 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
+    <header class="header-main-container">
+    
+        <article class="buscador-receta-index">
+            <form action="search-results.html" method="get" id="form-busqueda">
+                <input type="text" name="busqueda" id="input-busqueda" placeholder="Buscar una receta">
+                <div class="invalid-busqueda"></div>
+                <button type="submit">Buscar</button>
+            </form> 
+        </article>
+
+        <article class="logo-header">
+            <img src="./img/logo_ratatouille.jpg" alt="logo">
+        </article>
+
+        <article>
+            <nav class="header-menu-nav">
+                <ul class="menu-principal">
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./categories.html">CATEGORIAS</a></li>
+                    <li><a href="./login.html">LOGIN</a></li>
+                    <li><a href="./register.html">REGISTRO</a></li>
+                </ul>
+            </nav>
+        </article>
+
+    </header>
     <script src="./js/categories.js"></script>
 </body>
 </html>
