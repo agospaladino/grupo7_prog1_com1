@@ -14,8 +14,10 @@
     
         <article class="buscador-receta-index">
             <form action="search-results.html" method="get" id="form-busqueda">
-                <input type="text" name="busqueda" id="input-busqueda" placeholder="Buscar una receta">
-                <div class="invalid-busqueda"></div>
+                <div class="campo-mensaje">
+                    <input type="text" name="busqueda" id="input-busqueda" placeholder="Buscar una receta">
+                    <p class="invalid-busqueda"></p>
+                </div>
                 <button type="submit">Buscar</button>
             </form> 
         </article>
@@ -36,34 +38,42 @@
         </article>
 
     </header>
-    <section class="container">
-        <h1 class="form-container">REGISTER</h1>
-    </section>
-    <section class="access-form">
 
-        <form action="results.html" method="GET">
-          <div class="remember-me">
-                <label for="email">Email:</label>
-                <input id="email" type="email" name="email" value="" required> 
-            </div>
-        
-            <div class="remember-me">
-                <label for="password">Contraseña:</label>
-                <input id="password" type="password" name="password" value="">
-            </div>
-            <div>
-                
-                <input type="checkbox" name="tyc" value="tyc">Termino y condiciones
-            </label>
-                <label for="tyc"> 
-            </div>
-            <button class="remember-me"><a href="./login.html">Ya tengo cuenta</a>
-            </button>
-            <footer class="footer-main">
-                <p>Amalia Gomez Di Santo |</p>
-                <p>Agostina Paladino |</p>
-                <p>Juana Diaz Autorde</p>
-            </footer>
+    <main>
+        <section class="section-form">
+            <h1 class="form-container-titulo">REGISTRO</h1>
+            <article class="form-container-article">
+                <div class="form-container-caja">
+                    <form action="login.html" method="GET">
+                        <div class="remember-me">
+                            <label for="email">Email: </label>
+                            <input id="email" type="email" name="email" value="" placeholder="Ingrese su mail" required>
+                        </div>
+                        <div class="remember-me">
+                            <label for="password">Contraseña: </label>
+                            <input id="password" type="password" name="password" value="" placeholder="Ingrese su contraseña" required>
+                        </div>
+                        <div>
+                            <label for="tyc">
+                            <input type="checkbox" name="tyc" value="tyc">Términos y condiciones</label> 
+                        </div>
+                        <div class="caja-boton-registro">
+                            <button class="remember-me"><a href="./login.html">Ya tengo cuenta</a></button>
+                        </div>
+                    </form>
+                </div>
+
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer-main">
+        <p>Amalia Gomez Di Santo |</p>
+        <p>Agostina Paladino |</p>
+        <p>Juana Diaz Autorde</p>
+    </footer>
+
     <script src="./js/register.js"></script>
+
 </body>
 </html>
