@@ -1,0 +1,125 @@
+/* css index */
+
+body {
+    margin: 0;
+}
+
+/* Encabezado Principal */
+.main-header {
+    background-color: #fce4ec; /* Rosa claro */
+    padding: 10px 20px;
+  }
+  
+  .top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+  }
+  
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 5px 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 5px;
+    width: 200px;
+  }
+  
+  .search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .user-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .icon-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+
+
+footer {
+    display: flex;
+    justify-content: space-around;
+
+    padding: 20px;
+    background-color:  rgb(201, 197, 197);
+    color: black;
+}
+
+footer p {
+    color: black;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#home article {
+    width: 28%;
+    background-color:  rgb(201, 197, 197);
+
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+#home section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#home article img {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#home article div {
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+
+/* css detalle */
+
+#detalle-receta {
+    display: flex;
+    justify-content: space-around;
+}
+
+#detalle-receta img, #detalle-receta div {
+    width: 40%;
+}
+
+#detalle-receta div {
+    display: flex;
+    flex-direction: column;
+}

@@ -4,20 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./stylesheet.css">
 </head>
-<body>
+<body id="home">
     <header class="header-main-container">
     
         <article class="buscador-receta-index">
             <form action="search-results.html" method="get" id="form-busqueda">
-                <div class="campo-mensaje">
-                    <input type="text" name="busqueda" id="input-busqueda" placeholder="Buscar una receta">
-                    <p class="invalid-busqueda"></p>
-                </div>
+                <input type="text" name="busqueda" id="input-busqueda" placeholder="Buscar una receta">
+                <div class="invalid-busqueda"></div>
                 <button type="submit">Buscar</button>
             </form> 
         </article>
@@ -30,6 +25,7 @@
             <nav class="header-menu-nav">
                 <ul class="menu-principal">
                     <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./detalle.html">DETALLE</a></li>
                     <li><a href="./categories.html">CATEGORIAS</a></li>
                     <li><a href="./login.html">LOGIN</a></li>
                     <li><a href="./register.html">REGISTRO</a></li>
@@ -38,17 +34,19 @@
         </article>
 
     </header>
+
     <main>
         <h1 id="titulo-detalle-receta">Detalle de la receta</h1>
         <section class="detalle-receta-container">
             
         </section>
     </main>
+    
     <footer class="footer-main">
         <p>Amalia Gomez Di Santo |</p>
         <p>Agostina Paladino |</p>
         <p>Juana Diaz Autorde</p>
     </footer>
-    <script src="./js/receta.js"></script>
+    <script src="./js/detalle.js"></script>
 </body>
 </html>
