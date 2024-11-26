@@ -142,14 +142,17 @@ footer p {
 }
 
 /* CSS LOGIN Y REGISTRO */
+
 .form-container-titulo{
     text-align: center;
     font-size: 40px;
+    margin-bottom: 15px;
 }
 .form-container-article{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 30px;
 }
 .form-container-caja{
     display:flex;
@@ -160,34 +163,31 @@ footer p {
     padding: 20px;
     border-radius: 10px;
 }
-
-
-.access-form label{
-    font-size: 16px;
-    margin-bottom: 5px;
-    display: inline-flex;
+form label{
+    padding-right: 5px;
 }
-
-.access-form button{
-    font-size:16px;
+form input{
+    padding: 5px;
+}
+.form-container-email, .form-container-password, .remember-me{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.caja-boton-login, .caja-boton-registro{
+    display: flex;
+    justify-content: center;
+}
+.boton-registro, .boton-login{
+    font-size:14px;
     background-color: rgb(169, 166, 166);
     border: 1px solid rgb(169,166,166);
     color:white;
-    width: 40%;
-    padding: 8px 14px;
+    width: 60%;
+    padding: 5px;
     border-radius: 10px;
     cursor: pointer;
     justify-content: center;
     text-decoration: none;
-}
-
-.botones{
-    display: flex;
-    justify-content: space-around;
-}
-.remember-me{
-    text-align: center;
-}
-.remember-me input{
-    width:auto;
 }
