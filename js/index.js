@@ -34,7 +34,7 @@ let botonCargar = document.querySelector(".boton-cargar-index");
 let recetasMostradas = 0; // Para saber cuántas recetas se mostraron hasta el momento 
 const recetasPorPagina = 10; // Número de recetas a mostrar cada vez que toca "cargar mas"
 
-fetch("https://dummyjson.com/recipes?")
+fetch("https://dummyjson.com/recipes")
     .then(function (response) {
         return response.json();
     })
