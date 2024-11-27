@@ -11,7 +11,7 @@ body {
     font-style: normal;
     background-color: rgb(235, 225, 225);
 }
-ul, ol{
+ul{
     list-style-type: none;
 }
 a{
@@ -21,7 +21,7 @@ a{
 input, button{
     font-family: "Quicksand", sans-serif;
 }
-
+/* CSS INDEX*/
 /*Header*/
 .header-main-container {
     color: black;
@@ -76,17 +76,14 @@ header a {
     color: black;
     width: 15%;
 }
+
 /*Body*/
-#home {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.titulo-principal{
+
+.titulo-index{
     display: flex;
     justify-content: center;
+    font-size: 50px;
 }
-
 .container-recetas-index {
     display: flex;
     flex-wrap: wrap;
@@ -97,25 +94,26 @@ header a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 28%;
+    width: 18%;
     background-color: rgb(248, 216, 221);
-    margin: 20px;
+    margin: 10px;
     border-radius: 20px;
 }
 .imagenes-recipes {
-    width: 75%;
+    width: 85%;
     border-radius: 15%;
-    padding: 15px;
+    padding: 10px;
     margin-top: 10px;
     display: flex;
     align-items: center;
 }
 .titulo-receta{
-    font-size: 25px;
+    font-size: 20px;
+    text-align: center;
     padding: 5px;
 }
 .dificultad-receta, .detalle-receta{
-    font-size: 18px;
+    font-size: 16px;
     padding: 5px;
 }
 .detalle-receta{
@@ -140,9 +138,7 @@ footer p {
 .footer-main p{
     padding: 10px;
 }
-
 /* CSS LOGIN Y REGISTRO */
-
 .form-container-titulo{
     text-align: center;
     font-size: 40px;
@@ -169,15 +165,22 @@ form label{
 form input{
     padding: 5px;
 }
+#email, #password{
+    width: 100%;
+}
 .form-container-email, .form-container-password, .remember-me{
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding-bottom: 10px;
 }
-.caja-boton-login, .caja-boton-registro{
+.caja-boton-login, .caja-boton-registro, .form-sin-cuenta, .form-con-cuenta{
     display: flex;
     justify-content: center;
+}
+.form-sin-cuenta, .form-con-cuenta{
+    text-decoration: underline;
+    padding: 10px;
 }
 .boton-registro, .boton-login{
     font-size:14px;
@@ -186,6 +189,7 @@ form input{
     color:white;
     width: 60%;
     padding: 5px;
+    margin-top: 10px;
     border-radius: 10px;
     cursor: pointer;
     justify-content: center;
