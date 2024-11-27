@@ -138,6 +138,56 @@ footer p {
 .footer-main p{
     padding: 10px;
 }
+
+/* CSS RECETA */
+#titulo-detalle-receta{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 40px;
+  }
+  .detalle-receta-article{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  .caja-detalle-receta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid grey;
+    background-color: rgb(248, 216, 221);
+    border-radius: 10px;
+    width: 60%;
+  }
+  .caja-detalle-receta p, .detalle-receta-instrucciones{
+    color: rgb(92, 91, 91);
+  }
+  .detalle-receta-img{
+    width: 50%;
+    padding: 20px;
+    border-radius: 10%;
+  }
+  .detalle-receta-subtitulo{
+    font-size: 40px;
+  }
+  .detalle-receta-tiempo{
+    padding: 10px;
+  }
+  .receta-instrucciones-titulo, .receta-categorias-titulo{
+    font-size: 30px;
+    padding: 10px;
+  }
+  .receta-categorias-lista{
+    padding-bottom: 5px;
+  }
+  .receta-categorias{
+    text-decoration: underline;
+    color: rgb(92, 91, 91);
+  }
+  
 /* CSS LOGIN Y REGISTRO */
 .form-container-titulo{
     text-align: center;
