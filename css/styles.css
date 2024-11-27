@@ -36,8 +36,9 @@ input, button{
 .buscador-receta-index form input{
     margin-right: 10px;
 }
-.buscador-receta-index form button{
-    align-self: flex-start;
+.buscar-boton{
+    align-self: center;
+
 }
 .campo-mensaje{
     display: flex;
