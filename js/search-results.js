@@ -33,7 +33,7 @@ if (searchResults) {
                 }
                 containerResults.innerHTML = resultados;
             }else {
-                containerResults.innerHTML = "<p>No se encontraron resultados para el término buscado.</p>";
+                containerResults.innerHTML = '<p class="mensaje-invalid" >No se encontraron resultados para el término buscado.</p>';
             }
         })
         .catch(function (error) {
@@ -42,5 +42,5 @@ if (searchResults) {
         })
 }else {
     tituloResults.innerHTML = "No se especificó un término de búsqueda existente.";
-    containerResults.innerHTML = "<p>Por favor, ingrese un término de búsqueda válido.</p>";
+    containerResults.innerHTML = '<p class="mensaje-invalid" >Por favor, ingrese un término de búsqueda válido.</p>';
 }

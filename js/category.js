@@ -25,23 +25,23 @@ if(categoriaId){
                     const receta = data.recipes[i];
                     
                     categoriaDetalle += `
-                        <article class="receta-article">
-                            <img src="${receta.image}" alt="${receta.name}" class="receta-img">
-                            <h2 class="receta-titulo">${receta.name}</h2>
-                            <p class="receta-dificultad">Dificultad: ${receta.difficulty}</p>
-                            <a href="receta.html?id=${receta.id}" class="receta-detalle-link">Ver detalle</a>
+                        <article class="categoria-article">
+                            <img src="${receta.image}" alt="${receta.name}" class="categoria-imagen">
+                            <h2 class="categoria-subtitulo">${receta.name}</h2>
+                            <p class="categoria-dificultad">Dificultad: ${receta.difficulty}</p>
+                            <a href="receta.html?id=${receta.id}" class="categoria-detalle">Ver detalle</a>
                         </article>`
                 }
                 containerRecetasCategory.innerHTML = categoriaDetalle;
             }else {
-                containerRecetasCategory.innerHTML = "<p>No se encontraron recetas disponibles para esta categoría.</p>"
+                containerRecetasCategory.innerHTML = '<p class="mensaje-invalid">No se encontraron recetas disponibles para esta categoría.</p>';
             }
         })
         .catch(function (error) {
             console.log("Error al cargar la categoría " + error);
-            containerRecetasCategory.innerHTML = "<p>Hubo un error al cargar la categoría.</p>";
+            containerRecetasCategory.innerHTML = '<p class="mensaje-invalid">Hubo un error al cargar la categoría.</p>';
         })
 }else {
     // Si no se selecciona una categoría
-    containerRecetasCategory.innerHTML = "<p>No se especificó una categoría válida.</p>";
+    containerRecetasCategory.innerHTML = '<p class="mensaje-invalid">No se especificó una categoría válida.</p>';
 }

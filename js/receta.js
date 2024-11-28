@@ -51,6 +51,6 @@ if (id){
         console.log(`Error al cargar el detalle: ${err}`);
     })
 }else{
-    recetaDetalle.innerHTML += `<p>No se especificó de qué receta quiere el detalle.</p>` 
+    recetaDetalle.innerHTML += `<p class="mensaje-invalid" >No se especificó de qué receta quiere el detalle.</p>` 
     //si por ejemplo ingresas al html directo desde visual, aparece esto
 }

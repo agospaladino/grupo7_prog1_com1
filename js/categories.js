@@ -24,10 +24,10 @@ fetch(url)
             categoriasContainer.innerHTML = categorias;
         }else {
             // Si 'tags' no existe o está vacío:
-            categoriasContainer.innerHTML = "<p>No se encontraron categorías.</p>";
+            categoriasContainer.innerHTML = '<p class="mensaje-invalid" >No se encontraron categorías.</p>';
         }
     })
     .catch(function (error) {
         console.log("Error al cargar las categorías " + error);
-        categoriasContainer.innerHTML = "<p>Hubo un error al cargar las categorías.</p>";
+        categoriasContainer.innerHTML = '<p class="mensaje-invalid" >Hubo un error al cargar las categorías.</p>';
     })
