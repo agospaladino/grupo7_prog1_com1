@@ -5,26 +5,31 @@ let errorBusqueda = document.querySelector(".invalid-busqueda");
 
 // Agregar evento al formulario para validarlo antes de que sea enviado //
 formularioBusqueda.addEventListener("submit", function (event) {
-    event.preventDefault(); // Prevenir accion por defecto
 
     let valida = true;
 
     // Validaciones del input
     // El campo de busqueda no se debe enviar vacio
     if (entradaBusqueda.value == "") {
+        event.preventDefault(); // Prevenir accion por defecto
         errorBusqueda.style.display = "block";
         errorBusqueda.innerText = "El campo se encuentra vacío";
 
         valida = false; //cambia el valor a true dando por hecho que ocurrio un error
     }else if (entradaBusqueda.value.length<3) {
+        event.preventDefault(); // Prevenir accion por defecto
         entradaBusqueda.value = ""; // Vacía el campo para buscar nuevamente
         errorBusqueda.style.display = "block";
         errorBusqueda.innerText = "Mínimo 3 caracteres";
         
         valida = false;
+    }else {
+        // Ocultar el mensaje de error si el campo NO está vacío y tiene más de 3 caracteres
+        errorBusqueda.style.display = "none";
+        errorBusqueda.innerText = "";
     }
     if (valida){
-        formularioBusqueda.submit();
+        event.preventDefault;
     }
 })
 
