@@ -16,16 +16,14 @@ fetch(url)
                 const categoria = data[i];
 
                 categorias += `
-                    <article class="categorias-article">
-                        <ul>
-                            <li><a href="category.html?category=${categoria}" class="categories-opciones">${categoria}</a></li>
-                        </ul>
+                    <article class="categorias-cajas">
+                        <a href="category.html?category=${categoria}" class="categorias-opciones">${categoria}</a>
                     </article>`;
                 
             }
             categoriasContainer.innerHTML = categorias;
         }else {
-            // Si 'tags' no existe o está vacío, mostramos mensaje:
+            // Si 'tags' no existe o está vacío:
             categoriasContainer.innerHTML = "<p>No se encontraron categorías.</p>";
         }
     })
