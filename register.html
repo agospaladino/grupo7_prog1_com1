@@ -44,21 +44,27 @@
             <h1 class="form-container-titulo">REGISTRO</h1>
             <article class="form-container-article">
                 <div class="form-container-caja">
-                    <form action="login.html" method="GET">
+                    <form action="./login.html" method="GET" class="form-register">
                         <div class="remember-me">
-                            <label for="email">Email: </label>
-                            <input id="email" type="email" name="email" value="" placeholder="Ingrese su mail" required>
+                            <label for="email-reg">Email: </label>
+                            <div class="texto-error">
+                            <input id="email-reg" type="email" name="email" value="" placeholder="Ingrese su mail">
+                            <p class="invalid-email"></p>
+                            </div>
                         </div>
                         <div class="remember-me">
-                            <label for="password">Contraseña: </label>
-                            <input id="password" type="password" name="password" value="" placeholder="Ingrese su contraseña" required>
+                            <label for="password-reg">Contraseña: </label>
+                            <div class="texto-error">
+                            <input id="password-reg" type="password" name="password" value="" placeholder="Ingrese su contraseña">
+                            <p class="invalid-password"></p>
+                            </div>
                         </div>
                         <div class="remember-me">
                             <label for="tyc">
                             <input id="tyc" type="checkbox" name="tyc" value="tyc">Términos y condiciones</label> 
                         </div>
                         <div class="caja-boton-registro">
-                            <button class="boton-registro"><a href="./login.html">Registrarse</a></button>
+                            <button class="boton-registro">Registrarse</button>
                         </div>
                         <div class="form-con-cuenta">
                             <a href="./login.html">Ya tengo una cuenta.</a>

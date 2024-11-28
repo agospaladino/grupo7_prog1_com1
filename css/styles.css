@@ -38,7 +38,6 @@ input, button{
 }
 .buscar-boton{
     align-self: center;
-
 }
 .campo-mensaje{
     display: flex;
@@ -268,4 +267,14 @@ form input{
     cursor: pointer;
     justify-content: center;
     text-decoration: none;
+}
+.texto-error{
+    display: flex;
+    flex-direction: column;
+}
+.invalid-email, .invalid-password {
+    color: red;
+    font-size: 14px;
+    text-align: left;
+    width: 100%;
 }
