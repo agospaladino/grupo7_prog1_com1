@@ -15,7 +15,7 @@
         <article class="buscador-receta-index">
             <form action="./search-results.html" method="get" id="form-busqueda">
                 <div class="campo-mensaje">
-                    <input type="text" name="busqueda" id="input-busqueda" placeholder="Buscar una receta">
+                    <input type="text" name="q" id="input-busqueda" placeholder="Buscar una receta">
                     <p class="invalid-busqueda"></p>
                 </div>
                 <button type="submit" class="buscar-boton">Buscar</button>
@@ -47,11 +47,15 @@
                     <form action="index.html" method="GET" class="form-login">
                         <div class="form-container-email">
                             <label for="email-login">Email: </label>
+                            <div class="texto-error">
                             <input id="email-login" type="email" name="email" value="" placeholder="Ingrese su mail">
+                            </div>
                         </div>
                         <div class="form-container-password">
                             <label  for="password-login">Contraseña: </label>
+                            <div class="texto-error">
                             <input id="password-login" type="password" name="password" value="" placeholder="Ingrese su contraseña">
+                            </div>
                         </div>
                         <div class="caja-boton-login">
                             <button type="submit" class="boton-login">Iniciar sesión</button>

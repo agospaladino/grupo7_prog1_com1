@@ -5,11 +5,11 @@ let containerResults = document.querySelector("#container-search-results");
 // Query String
 let queryString = location.search;
 let queryStringObj = new URLSearchParams(queryString);
-let searchResults = queryStringObj.get("search");
+let searchResults = queryStringObj.get("q");
 let url = `https://dummyjson.com/recipes/search?q=${searchResults}`;
 
 if (searchResults) {
-    tituloResults.innerHTML = `Resultados de búsqueda para: <span style="color: rgb(92, 91, 91);">${searchResults}</span>`
+    tituloResults.innerHTML = `Resultados de búsqueda para: <span>${searchResults}</span>`
 
     fetch(url)
         .then(function (response) {

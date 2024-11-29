@@ -9,7 +9,7 @@ let categoriaId = queryStringObj.get("category");
 let url = `https://dummyjson.com/recipes/tag/${categoriaId}`
 
 if(categoriaId){
-    categoriaTitulo.innerHTML = `CATEGORÍA: <span style="color: rgb(92, 91, 91);">${categoriaId}</span>`;
+    categoriaTitulo.innerHTML = `CATEGORÍA: <span>${categoriaId}</span>`;
 
     fetch(url)
         .then(function (response) {
