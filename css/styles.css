@@ -148,22 +148,14 @@ span{
     color: rgb(92, 91, 91);
 }
 
-/*Footer*/
+/*FOOTER*/
 footer{
-    display: flex;
-    justify-content: center;
     padding: 20px;
     background-color: rgb(248, 216, 221);
-    color: black;
+    margin-top: 30px;
 }
 footer p {
     color: black;
-}
-.footer-main{
-    width: 100%;
-}
-.footer-main p{
-    padding: 10px;
 }
 .nombres-footer{
     display: flex;
@@ -199,6 +191,7 @@ footer p {
 }
 .detalle-receta-subtitulo{
     font-size: 40px;
+    text-align: center;
 }
 .detalle-receta-tiempo{
     padding: 10px;
@@ -383,7 +376,7 @@ form input{
 /* MEDIA QUERIES */
 @media only screen and (max-width: 420px){
     
-    /* HEADER Y HOME */
+    /* HEADER-HOME-FOOTER */
     .buscador-receta-index form{
         justify-content: center;
     }
@@ -416,6 +409,11 @@ form input{
         width: 30%;
         font-size: 16px;
     }
+    .nombres-footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
     /* RECETA */
     .caja-detalle-receta{
         width: 80%;
