@@ -375,6 +375,34 @@ form input{
 }
 
 /* MEDIA QUERIES */
+@media only screen and (max-width: 768px){
+    /* HEADER-HOME-FOOTER */
+    header .menu-principal li {
+        width: 20%;
+        text-align: center;
+        font-size: 20px;
+    }
+    #article-recipes{
+        width: 90%;
+        margin: 20px;
+    }
+    .titulo-receta{
+        font-size: 40px;
+    }
+    .caja-boton-cargar-index{
+        display: flex;
+        justify-content: center;
+    }
+    .boton-cargar-index{
+        width: 20%;
+        font-size: 20px;
+    }
+    .nombres-footer{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 @media only screen and (max-width: 420px){
     
     /* HEADER-HOME-FOOTER */
@@ -402,17 +430,9 @@ form input{
     .titulo-receta{
         font-size: 30px;
     }
-    .caja-boton-cargar-index{
-        display: flex;
-        justify-content: center;
-    }
     .boton-cargar-index{
         width: 30%;
         font-size: 16px;
-    }
-    .nombres-footer{
-        flex-direction: column;
-        align-items: center;
     }
 
     /* RECETA */
