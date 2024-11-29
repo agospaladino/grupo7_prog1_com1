@@ -23,17 +23,23 @@ input, button{
 }
 
 /* CSS TÍTULOS */
-#titulo-index, #categoria-titulo, #categorias-titulo, #titulo-detalle-receta, .form-container-titulo, #titulo-search-results{
+#titulo-index, #categoria-titulo, #categorias-titulo, #titulo-detalle-receta, .form-container-titulo{
     text-align: center;
     font-size: 50px;
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 2%;
+}
+#titulo-search-results{
+    text-align: center;
+    font-size: 40px;
+    padding: 10px;
 }
 
 /* Mensaje de error en todas*/
 .mensaje-invalid{
     padding: 30px;
     font-size: 20px;
+    text-align: center;
 }
 
 /* CSS INDEX*/
@@ -53,6 +59,7 @@ input, button{
 }
 .buscar-boton{
     align-self: center;
+    cursor: pointer;
 }
 .campo-mensaje{
     display: flex;
@@ -130,6 +137,18 @@ header a {
     margin-bottom: 15px;
     text-decoration: underline;
 }
+.boton-cargar-index{
+    font-size: 14px;
+    background-color: rgb(169, 166, 166);
+    border: 1px solid rgb(169,166,166);
+    color:white;
+    width: 8%;
+    padding: 3px;
+    margin: 2%;
+    border-radius: 10px;
+    cursor: pointer;
+    justify-content: center;
+}
 
 /*Footer*/
 footer{
@@ -151,44 +170,52 @@ footer p {
 
 /* CSS RECETA */
 .detalle-receta-article{
-display: flex;
-justify-content: center;
-margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
 }
 .caja-detalle-receta{
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-border: 1px solid rgb(169, 166, 166);
-background-color: rgb(248, 216, 221);
-border-radius: 5%;
-width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(169, 166, 166);
+    background-color: rgb(248, 216, 221);
+    border-radius: 5%;
+    width: 60%;
 }
 .caja-detalle-receta p, .detalle-receta-instrucciones{
-color: rgb(92, 91, 91);
+    color: rgb(92, 91, 91);
 }
 .detalle-receta-img{
-width: 50%;
-padding: 20px;
-border-radius: 10%;
+    width: 50%;
+    padding: 20px;
+    border-radius: 10%;
 }
 .detalle-receta-subtitulo{
-font-size: 40px;
+    font-size: 40px;
 }
 .detalle-receta-tiempo{
-padding: 10px;
+    padding: 10px;
 }
 .receta-instrucciones-titulo, .receta-categorias-titulo{
-font-size: 30px;
-padding: 10px;
+    font-size: 30px;
+    padding: 10px;
 }
 .receta-categorias-lista{
-padding-bottom: 5px;
+    padding-bottom: 5px;
 }
 .receta-categorias{
-text-decoration: underline;
-color: rgb(92, 91, 91);
+    text-decoration: underline;
+    color: rgb(92, 91, 91);
+}
+.detalle-receta-instrucciones{
+    padding: 2%;
+    font-size: 17px;
+    text-align: center;
+}
+.receta-categorias-lista{
+    text-align: center;
 }
 
   /* CSS CATEGORIES */
@@ -213,13 +240,14 @@ font-weight: bold;
 font-size: 20px;
 color: rgb(98, 96, 96);
 }
+
 /* CSS CATEGORY */
 #container-recetas-category{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-  }
-  .categoria-article{
+}
+.categoria-article{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -230,23 +258,58 @@ color: rgb(98, 96, 96);
     margin: 2%;
     border: 1px solid rgb(169, 166, 166);
     border-radius: 5%;
-  }
-  .categoria-imagen{
+}
+.categoria-imagen{
     width: 80%;
     padding: 5%;
     border-radius: 10%;
-  }
-  .categoria-subtitulo{
+}
+.categoria-subtitulo{
     font-size: 30px;
     padding: 2%;
-  }
-  .categoria-dificultad, .categoria-detalle{
+    text-align: center;
+}
+.categoria-dificultad, .categoria-detalle{
     font-size: 20px;
     padding: 1%;
-  }
-  .categoria-detalle{
+}
+.categoria-detalle{
     text-decoration: underline;
-  }
+}
+
+/* CSS SEARCH-RESULTS */
+#container-search-results{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.article-search-results{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(248, 216, 221);
+    padding: 3%;
+    margin: 2%;
+    border: 1px solid rgb(169, 166, 166);
+    border-radius: 5%;
+    width: 60%;
+}
+.imagen-search-results{
+    width: 80%;
+    border-radius: 10%;
+    padding: 2%;
+}
+.resultado-titulo{
+    text-align: center;
+    font-size: 30px;
+    padding: 2%;
+}
+.resultado-detalle{
+    font-size: 20px;
+    text-decoration: underline;
+    padding-bottom: 3%;
+}
 
 /* CSS LOGIN Y REGISTRO */
 .form-container-article{

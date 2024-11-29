@@ -28,7 +28,7 @@ if (searchResults) {
                         <article class="article-search-results">
                             <img src="${receta.image}" alt="${receta.name}" class="imagen-search-results">
                             <h2 class="resultado-titulo">${receta.name}</h2>
-                            <a href="receta.html?id=${receta.id}" class="resultado-detalle-link">Ver detalle</a>
+                            <a href="receta.html?id=${receta.id}" class="resultado-detalle">Ver detalle</a>
                         </article>`;
                 }
                 containerResults.innerHTML = resultados;
@@ -38,7 +38,7 @@ if (searchResults) {
         })
         .catch(function (error) {
             console.log("Error al cargar el término buscado " + error);
-            containerResults.innerHTML = "<p>Hubo un error al cargar el término buscado.</p>";
+            containerResults.innerHTML = '<p class="mensaje-invalid>Hubo un error al cargar el término buscado.</p>';
         })
 }else {
     tituloResults.innerHTML = "No se especificó un término de búsqueda existente.";
