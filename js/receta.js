@@ -41,7 +41,7 @@ if (id){
                 <h3 class="receta-categorias-titulo">Categorias: </h3>
                 <ul class="receta-categorias-lista">${categorias}</ul>`;
         } else{
-            receta += `<p>Esta receta no cuenta con categorias disponibles.</p>`;
+            receta += `<p class="mensaje-invalid">Esta receta no cuenta con categorias disponibles.</p>`;
         }
         receta += `</div>
                 </article>`; //en caso de que se cumpla el if/else, se añaden los li/ul

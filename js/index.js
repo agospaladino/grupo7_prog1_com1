@@ -81,7 +81,7 @@ fetch("https://dummyjson.com/recipes")
                 }
             });
         } else {
-            containerRecetas.innerHTML = `<p>No se encontraron recetas para mostrar.</p>`;
+            containerRecetas.innerHTML = `<p class="mensaje-invalid" >No se encontraron recetas para mostrar.</p>`;
         }
     })
     .catch(function(error) {

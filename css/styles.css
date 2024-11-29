@@ -165,6 +165,13 @@ footer p {
 .footer-main p{
     padding: 10px;
 }
+.nombres-footer{
+    display: flex;
+    justify-content: center;
+}
+.nombres-footer p{
+    padding: 5px;
+}
 
 /* CSS RECETA */
 .detalle-receta-article{
@@ -371,4 +378,42 @@ form input{
     font-size: 14px;
     text-align: left;
     width: 100%;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 420px){
+    
+    /* HEADER Y HOME */
+    .buscador-receta-index form{
+        justify-content: center;
+    }
+    .logo-header img {
+        margin-bottom: 20px;
+    }
+    header .menu-principal {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    header .menu-principal li {
+        width: 70%;
+        margin: 10px;
+    }
+    header .menu-principal li a{
+        font-size: 20px;
+    }
+    #article-recipes{
+        width: 90%;
+    }
+    .titulo-receta{
+        font-size: 30px;
+    }
+    .caja-boton-cargar-index{
+        display: flex;
+        justify-content: center;
+    }
+    .boton-cargar-index{
+        width: 30%;
+        font-size: 16px;
+    }
 }
