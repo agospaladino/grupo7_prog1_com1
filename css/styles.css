@@ -442,4 +442,28 @@ form input{
     .categorias-opciones{
         font-size: 30px;
     }
+    /* CATEGORY */
+  .categoria-article{
+    width: 90%;
+    border-radius: 10px;
+    }
+    .categoria-imagen{
+        width: 90%;
+    }
+    .categoria-subtitulo{
+        font-size: 30px;
+    }
+    .categoria-dificultad, .categoria-detalle{
+        font-size: 18px;
+    }
+    /* SEARCH-RESULTS */
+    #titulo-search-results{
+        font-size: 25px;
+    }
+    .article-search-results{
+        width: 90%;
+    }
+    .resultado-titulo{
+        font-size: 30px;
+    }
 }
