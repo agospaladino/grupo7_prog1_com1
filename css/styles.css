@@ -401,6 +401,64 @@ form input{
         flex-direction: column;
         align-items: center;
     }
+    .dificultad-receta, .detalle-receta{
+        font-size: 20px;
+    }
+    /* RECETA */
+    .caja-detalle-receta{
+        width: 80%;
+        border-radius: 30px;
+    }
+    .detalle-receta-img{
+        width: 90%;
+        margin-top: 20px;
+    }
+    .detalle-receta-subtitulo{
+        font-size: 30px;
+    }
+    .receta-instrucciones-titulo, .receta-categorias-titulo{
+        font-size: 25px;
+    }
+    .receta-instrucciones-lista{
+        width: 80%;
+        text-align: center;
+    }
+    /* CATEGORIES */
+    .categorias-cajas{
+        width: 90%;
+    }
+    .categorias-opciones{
+        font-size: 40px;
+    }
+    /* CATEGORY */
+    .categoria-article{
+        width: 90%;
+        border-radius: 10px;
+    }
+    .categoria-imagen{
+        width: 90%;
+    }
+    .categoria-subtitulo{
+        font-size: 30px;
+    }
+    .categoria-dificultad, .categoria-detalle{
+        font-size: 18px;
+    }
+    /* SEARCH-RESULTS */
+    #titulo-search-results{
+        font-size: 25px;
+    }
+    .article-search-results{
+        width: 90%;
+    }
+    .resultado-titulo{
+        font-size: 30px;
+    }
+    /* LOGIN Y REGISTRO */
+    .form-container-caja{
+        width: 60%;
+        padding: 4%;
+    }
 }
 
 @media only screen and (max-width: 420px){
@@ -434,59 +492,13 @@ form input{
         width: 30%;
         font-size: 16px;
     }
-
-    /* RECETA */
-    .caja-detalle-receta{
-        width: 80%;
-        border-radius: 10px;
-    }
-    .detalle-receta-img{
-        width: 90%;
-    }
-    .detalle-receta-subtitulo{
-        font-size: 30px;
-    }
-    .receta-instrucciones-titulo, .receta-categorias-titulo{
-        font-size: 25px;
-    }
-    .receta-instrucciones-lista{
-        width: 80%;
-        text-align: center;
-    }
     /* CATEGORIES */
-    .categorias-cajas{
-        width: 90%;
-        border-radius: 10px;
-    }
     .categorias-opciones{
-        font-size: 30px;
-    }
-    /* CATEGORY */
-    .categoria-article{
-        width: 90%;
-        border-radius: 10px;
-    }
-    .categoria-imagen{
-        width: 90%;
-    }
-    .categoria-subtitulo{
-        font-size: 30px;
-    }
-    .categoria-dificultad, .categoria-detalle{
-        font-size: 18px;
-    }
-    /* SEARCH-RESULTS */
-    #titulo-search-results{
-        font-size: 25px;
-    }
-    .article-search-results{
-        width: 90%;
-    }
-    .resultado-titulo{
         font-size: 30px;
     }
     /* LOGIN Y REGISTRO */
     .form-container-caja{
         width: 90%;
+        padding: 30px;
     }
 }
