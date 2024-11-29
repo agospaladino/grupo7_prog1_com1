@@ -279,6 +279,7 @@ footer p {
 #container-search-results{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin-bottom: 40px;
 }
 .article-search-results{
@@ -441,9 +442,9 @@ form input{
         font-size: 30px;
     }
     /* CATEGORY */
-  .categoria-article{
-    width: 90%;
-    border-radius: 10px;
+    .categoria-article{
+        width: 90%;
+        border-radius: 10px;
     }
     .categoria-imagen{
         width: 90%;
@@ -463,5 +464,9 @@ form input{
     }
     .resultado-titulo{
         font-size: 30px;
+    }
+    /* LOGIN Y REGISTRO */
+    .form-container-caja{
+        width: 90%;
     }
 }
