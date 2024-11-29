@@ -35,7 +35,7 @@ if (id){
             let categorias = " ";
             for (let i = 0; i < data.tags.length; i++) {
                 categorias += `
-                    <li class="receta-categorias-lista"><a href="categories.html?categoria=${data.tags[i]}" class="receta-categorias">${data.tags[i]}</a></li>`;
+                    <li class="receta-categorias-lista"><a href="category.html?category=${data.tags[i]}" class="receta-categorias">${data.tags[i]}</a></li>`;
             }
             receta += `
                 <h3 class="receta-categorias-titulo">Categorias: </h3>
