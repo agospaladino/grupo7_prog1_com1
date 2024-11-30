@@ -13,23 +13,19 @@ formularioBusqueda.addEventListener("submit", function (event) {
     if (entradaBusqueda.value == "") {
         event.preventDefault(); // Prevenir accion por defecto
         errorBusqueda.style.display = "block";
-        errorBusqueda.innerText = "El campo se encuentra vacío";
+        errorBusqueda.innerText = "El campo se encuentra vacío.";
 
         valida = false; //cambia el valor a true dando por hecho que ocurrio un error
     }else if (entradaBusqueda.value.length<3) {
         event.preventDefault(); // Prevenir accion por defecto
         entradaBusqueda.value = ""; // Vacía el campo para buscar nuevamente
         errorBusqueda.style.display = "block";
-        errorBusqueda.innerText = "Mínimo 3 caracteres";
+        errorBusqueda.innerText = "Mínimo 3 caracteres.";
         
         valida = false;
-    }else {
-        // Ocultar el mensaje de error si el campo NO está vacío y tiene más de 3 caracteres
-        errorBusqueda.style.display = "none";
-        errorBusqueda.innerText = "";
     }
     if (valida){
-        event.preventDefault;
+        formularioBusqueda.submit(); //Se envia el formulario en caso de no entrar en las validaciones anteriores
     }
 })
 
@@ -46,7 +42,7 @@ fetch("https://dummyjson.com/recipes")
     .then(function (data) {
     console.log(data);
 
-        if (data.recipes) {
+        if (data.recipes.length > 0) {
             let recetas = " ";
             for (let i = 0; i < recetasPorPagina && i < data.recipes.length; i++) {
                 recetas += `
@@ -81,6 +77,7 @@ fetch("https://dummyjson.com/recipes")
                 }
             });
         } else {
+            // Si por alguna razón no carga ninguna receta de la API 
             containerRecetas.innerHTML = `<p class="mensaje-invalid" >No se encontraron recetas para mostrar.</p>`;
         }
     })

@@ -1,4 +1,4 @@
-// Creo variable para  caputurar la section que contendrá el detalle de las recetas
+// Creo variable para caputurar la section que contendrá el detalle de las recetas
 let recetaDetalle = document.querySelector(".detalle-receta-container");
 
 // Creo queryString
@@ -15,11 +15,10 @@ if (id){
     .then(function (data) {
         console.log(data);
         let receta = `
-            <article class="detalle-receta-article">
-                <div class="caja-detalle-receta">
-                    <img src="${data.image}" alt="${data.name}" class="detalle-receta-img">
-                    <h2 class="detalle-receta-subtitulo">${data.name}</h2>
-                    <p class="detalle-receta-tiempo">Tiempo de cocción: ${data.cookTimeMinutes} minutos</p>
+            <article class="caja-detalle-receta">
+                <img src="${data.image}" alt="${data.name}" class="detalle-receta-img">
+                <h2 class="detalle-receta-subtitulo">${data.name}</h2>
+                <p class="detalle-receta-tiempo">Tiempo de cocción: ${data.cookTimeMinutes} minutos</p>
             `;
 
         let instrucciones = ""; // Variable para acumular las instrucciones
@@ -31,7 +30,7 @@ if (id){
             <ol class="receta-instrucciones-lista">${instrucciones}</ol>
         `;
 
-        if (data.tags && data.tags.length > 0) {
+        if (data.tags.length > 0) {
             let categorias = " ";
             for (let i = 0; i < data.tags.length; i++) {
                 categorias += `
@@ -39,11 +38,11 @@ if (id){
             }
             receta += `
                 <h3 class="receta-categorias-titulo">Categorias: </h3>
-                <ul class="receta-categorias-lista">${categorias}</ul>`;
+                <ul>${categorias}</ul>`;
         } else{
             receta += `<p class="mensaje-invalid">Esta receta no cuenta con categorias disponibles.</p>`;
         }
-        receta += `</div>
+        receta += `
                 </article>`; //en caso de que se cumpla el if/else, se añaden los li/ul
         recetaDetalle.innerHTML = receta;
     })
@@ -52,5 +51,5 @@ if (id){
     })
 }else{
     recetaDetalle.innerHTML += `<p class="mensaje-invalid" >No se especificó de qué receta quiere el detalle.</p>` 
-    //si por ejemplo ingresas al html directo desde visual, aparece esto
+    //si por ejemplo ingresas al html directo desde visual studio code, aparece esto
 }

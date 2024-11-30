@@ -7,7 +7,6 @@
 body {
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
     font-style: normal;
     background-color: rgb(235, 225, 225);
 }
@@ -38,23 +37,24 @@ input, button{
 }
 
 /* CSS INDEX*/
-/*Header*/
+/* HEADER */
 .header-main-container {
     color: black;
     width: 100%;
 }
-.buscador-receta-index form{
+#form-busqueda{
     display: flex;
     justify-content: flex-end;
     padding: 20px;
     margin-right: 30px;
 }
-.buscador-receta-index form input{
+#input-busqueda{
     margin-right: 10px;
 }
 .buscar-boton{
     align-self: center;
     cursor: pointer;
+    padding: 5px;
 }
 .campo-mensaje{
     display: flex;
@@ -75,12 +75,12 @@ input, button{
     width: 180px;
     border-radius: 100%;
 }
-header .menu-principal {
+.menu-principal{
     list-style-type: none;
     display: flex;
     justify-content: center;
 }
-header .menu-principal li {
+.menu-principal li {
     padding: 20px;
     background-color: rgb(248, 216, 221);
     margin: 20px 10px;
@@ -89,9 +89,11 @@ header .menu-principal li {
     border-radius: 5px;
 }
 header a {
-    text-decoration: none;
+    font-size: 20px;
     color: black;
-    width: 15%;
+}
+header a:hover{
+    color: gray;
 }
 
 /* BODY */
@@ -115,8 +117,6 @@ header a {
     border-radius: 15%;
     padding: 10px;
     margin-top: 10px;
-    display: flex;
-    align-items: center;
 }
 .titulo-receta{
     font-size: 20px;
@@ -134,7 +134,7 @@ header a {
 .boton-cargar-index{
     font-size: 14px;
     background-color: rgb(169, 166, 166);
-    border: 1px solid rgb(169,166,166);
+    border: 1px solid rgb(144, 141, 141);
     color:white;
     width: 8%;
     padding: 3px;
@@ -153,21 +153,20 @@ span{
     background-color: rgb(248, 216, 221);
     margin-top: 30px;
 }
-.footer-main-container p {
-    color: black;
-}
 .nombres-footer{
     display: flex;
     justify-content: center;
 }
 .nombres-footer p{
     padding: 5px;
+    color: black;
 }
 
 /* CSS RECETA */
-.detalle-receta-article{
+.detalle-receta-container{
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-bottom: 40px;
 }
 .caja-detalle-receta{
@@ -180,7 +179,7 @@ span{
     border-radius: 5%;
     width: 60%;
 }
-.caja-detalle-receta p, .detalle-receta-instrucciones{
+.detalle-receta-tiempo, .detalle-receta-instrucciones{
     color: rgb(92, 91, 91);
 }
 .detalle-receta-img{
@@ -199,20 +198,21 @@ span{
     font-size: 30px;
     padding: 10px;
 }
-.receta-categorias-lista{
-    padding-bottom: 5px;
-}
-.receta-categorias{
-    text-decoration: underline;
-    color: rgb(92, 91, 91);
-}
 .detalle-receta-instrucciones{
     padding: 2%;
     font-size: 17px;
     text-align: center;
 }
 .receta-categorias-lista{
+    padding-bottom: 5px;
     text-align: center;
+}
+.receta-categorias{
+    text-decoration: underline;
+    color: rgb(92, 91, 91);
+}
+.receta-instrucciones-lista{
+    width: 70%;
 }
 
   /* CSS CATEGORIES */
@@ -468,7 +468,7 @@ form input{
 @media only screen and (max-width: 420px){
     
     /* HEADER-HOME-FOOTER */
-    .buscador-receta-index form{
+    #form-busqueda{
         justify-content: center;
     }
     .logo-header img {
